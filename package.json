@@ -2,7 +2,7 @@
   "name": "graph-api",
   "version": "0.0.1",
   "description": "GraphQL API using Typescript, NodeJS and MongoDB",
-  "main": "src/index.ts",
+  "main": "src/server.ts",
   "keywords": [
     "GraphQL",
     "API"
@@ -10,7 +10,7 @@
   "author": "Cleysson Azevedo",
   "license": "ISC",
   "scripts": {
-    "start": "nodemon src/index.ts",
+    "start": "nodemon src/server.ts",
     "build": "tsc",
     "test": "jasmine-ts --config=jasmine.json"
   },
@@ -22,8 +22,18 @@
     "url": "https://github.com/cleyssonazevedo/graph-api/issues"
   },
   "homepage": "https://github.com/cleyssonazevedo/graph-api#readme",
-  "dependencies": {},
+  "dependencies": {
+    "graphql-tag": "2.10.1",
+    "graphql-yoga": "1.18.1",
+    "helmet": "3.20.0",
+    "mongoose": "5.6.7",
+    "reflect-metadata": "0.1.13",
+    "type-graphql": "0.17.4"
+  },
   "devDependencies": {
+    "@types/express": "4.17.0",
+    "@types/helmet": "0.0.43",
+    "@types/mongoose": "5.5.11",
     "@types/node": "12.6.8",
     "nodemon": "1.19.1",
     "ts-node": "8.3.0",
